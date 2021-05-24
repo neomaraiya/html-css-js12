@@ -1,42 +1,31 @@
-.card {
-  width: 200px;
-  height: 300px;
-  background-image: url('https://image.freepik.com/free-vector/gold-vintage-greeting-card-black-background_1159-6201.jpg');
-  padding: 1rem;
-  transition: transform 1s ease-in;
-  overflow: hidden;
-}
-.card:hover {
-  transform: scale(1.05);
-}
-.card-title,
-.card-body {
-  color: white;
-}
-.card-title {
-  position: relative;
-  width: max-content;
-}
-.card-title::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.title::after {
   background: red;
+  content: '';
+  height: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 900ms;
+  transition-timing-function: ease;
+  transform-origin: center;
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 500ms ease-in;
 }
 
-.card:hover .card-title::after {
+.card:hover {
+  color: blue;
+}
+
+.card:hover .title::after {
   transform: scaleX(1);
+  background: blue;
 }
-.card-content {
-  transform: translateY(90%);
-  transition: transform 1s ease;
-}
-.card:hover .card-content {
-  transform: translateY(30%);
+
+.card {
+  color: red;
+  position: relative;
+  background: green;
+  height: 50px;
+  width: 100%;
 }
