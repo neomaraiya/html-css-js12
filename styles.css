@@ -9,7 +9,7 @@
   transition-property: transform;
   transition-duration: 900ms;
   transition-timing-function: ease;
-  transform-origin: center;
+  transform-origin: left;
   transform: scaleX(0);
 }
 
@@ -28,4 +28,9 @@
   background: green;
   height: 50px;
   width: 100%;
+  margin-bottom: 10rem;
+}
+
+.image {
+  transform: translateX(-150px);
 }
